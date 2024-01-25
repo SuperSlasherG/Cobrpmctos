@@ -8,7 +8,7 @@ body, h1, h2, p, ul, li {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f0f0f0; /* Light gray background */
     color: #333; /* Dark text color */
 }
 
@@ -18,15 +18,46 @@ body {
     padding: 20px;
 }
 
-/* Navbar styling */
+/* Flash animation on initial load */
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #FFD600, #FF5252); /* Initial flash gradient */
+    animation: flash 1s forwards;
+}
+
+@keyframes flash {
+    to {
+        opacity: 0;
+        pointer-events: none; /* Disable pointer events after the flash */
+    }
+}
+
+/* Navbar styling with surprise gradient and animation */
 .navbar {
-    background-color: #673AB7; /* Deep Purple color */
+    background: linear-gradient(to right, #FF5252, #FFD600); /* Gradient from Red to Yellow */
     color: #fff; /* White text */
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease; /* Smooth color transition */
+}
+
+.navbar:hover {
+    background: linear-gradient(to right, #FFD600, #FF5252); /* Reverse gradient on hover */
 }
 
 .navbar-brand {
     font-family: 'League Spartan', sans-serif;
-    font-size: 32px;
+    font-size: 36px;
+    transition: color 0.5s ease; /* Smooth color transition */
+}
+
+.navbar:hover .navbar-brand {
+    color: #FF5252; /* Red color on hover */
 }
 
 .navbar-toggler-icon {
@@ -37,36 +68,59 @@ body {
     color: #fff !important; /* White text for navigation links */
 }
 
-/* Section styling */
+/* Section styling with surprise background and animation */
 #premium {
     padding: 50px 0;
+    background: linear-gradient(to right, #64B5F6, #81C784); /* Gradient from Blue to Green */
+    transition: background 0.5s ease; /* Smooth color transition */
+}
+
+#premium:hover {
+    background: linear-gradient(to right, #81C784, #64B5F6); /* Reverse gradient on hover */
 }
 
 /* Intro styling */
 .intro {
     margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
 }
 
-/* Terms of Service styling */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Terms of Service styling with surprise animation */
 h2 {
     color: #FFC107; /* Amber color for section titles */
     margin-top: 20px;
+    font-size: 2.5em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-/* Footer styling */
+/* Footer styling with surprise background and animation */
 .footer-dark {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #607D8B; /* Blue Gray background color */
+    background: linear-gradient(to right, #FF7043, #FFD54F); /* Gradient from Deep Orange to Yellow */
+    color: #fafafa; /* Light text */
+    transition: background 0.5s ease; /* Smooth color transition */
+}
+
+.footer-dark:hover {
+    background: linear-gradient(to right, #FFD54F, #FF7043); /* Reverse gradient on hover */
 }
 
 .footer-dark p {
     color: #fff; /* White text */
+    font-size: 16px;
+    opacity: 0.8;
 }
 
 .footer-dark a {
@@ -78,14 +132,15 @@ ul {
     text-decoration: underline; /* Underline links on hover */
 }
 
-/* Scroll-to-top button styling with animation */
+/* Scroll-to-top button styling with surprise animation */
 .smoothScroll {
     color: #FF5722; /* Deep Orange color for the arrow-up icon */
+    font-size: 24px;
     transition: transform 0.3s ease-in-out;
 }
 
 .smoothScroll:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(360deg); /* Surprise rotation on hover */
 }
 
 /* Responsive adjustments */
@@ -93,4 +148,4 @@ ul {
     .navbar-toggler {
         background-color: #fff; /* White color for the toggler button */
     }
-}
+    }
