@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa; /* Light gray background */
-    color: #343a40; /* Dark text color */
+    color: #333; /* Dark text color */
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 
 /* Navbar styling */
 .navbar {
-    background-color: #007bff; /* Bootstrap's primary color */
+    background-color: #4CAF50; /* Green color */
     color: #fff; /* White text */
 }
 
@@ -49,7 +49,7 @@ body {
 
 /* Terms of Service styling */
 h2 {
-    color: #007bff; /* Blue color for section titles */
+    color: #FFC107; /* Amber color for section titles */
     margin-top: 20px;
 }
 
@@ -62,7 +62,7 @@ ul {
 .footer-dark {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #343a40; /* Dark background color */
+    background-color: #607D8B; /* Blue Gray background color */
 }
 
 .footer-dark p {
@@ -70,7 +70,7 @@ ul {
 }
 
 .footer-dark a {
-    color: #007bff; /* Blue color for links */
+    color: #03A9F4; /* Light Blue color for links */
     text-decoration: none;
 }
 
@@ -78,9 +78,14 @@ ul {
     text-decoration: underline; /* Underline links on hover */
 }
 
-/* Scroll-to-top button styling */
+/* Scroll-to-top button styling with animation */
 .smoothScroll {
-    color: #007bff; /* Blue color for the arrow-up icon */
+    color: #FF5722; /* Deep Orange color for the arrow-up icon */
+    transition: transform 0.3s ease-in-out;
+}
+
+.smoothScroll:hover {
+    transform: scale(1.2);
 }
 
 /* Responsive adjustments */
