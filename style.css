@@ -1,0 +1,91 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #007bff; /* Bootstrap's primary color */
+    color: #fff; /* White text */
+}
+
+.navbar-brand {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for the toggler icon */
+}
+
+.nav-link {
+    color: #fff !important; /* White text for navigation links */
+}
+
+/* Section styling */
+#premium {
+    padding: 50px 0;
+}
+
+/* Intro styling */
+.intro {
+    margin-bottom: 30px;
+}
+
+/* Terms of Service styling */
+h2 {
+    color: #007bff; /* Blue color for section titles */
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* Footer styling */
+.footer-dark {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #343a40; /* Dark background color */
+}
+
+.footer-dark p {
+    color: #fff; /* White text */
+}
+
+.footer-dark a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+.footer-dark a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Scroll-to-top button styling */
+.smoothScroll {
+    color: #007bff; /* Blue color for the arrow-up icon */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        background-color: #fff; /* White color for the toggler button */
+    }
+}
