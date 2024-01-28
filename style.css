@@ -58,8 +58,8 @@ nav a:hover {
 section {
     padding: 30px;
     margin: 30px;
-    background-color: rgba(128, 128, 128, 0.9);
-    border-radius: 20px;
+    background-color: #ffe08a; /* Change background color to yellow */
+    border-radius: 8px; /* Make sections rectangular */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, transform 0.5s ease-in-out, box-shadow 0.3s, color 0.3s;
     transform: translateY(0);
