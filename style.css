@@ -21,47 +21,48 @@ body {
 
 /* Header styles */
 .navbar {
-    background-color: #222; /* Dark background for the header */
+    background-color: transparent; /* Make navbar background transparent */
     padding: 15px 0;
     transition: background-color 0.5s ease-in-out;
 }
 
 .navbar-brand {
     font-size: 2rem;
-    color: #FFF; /* White text color */
+    color: #333; /* Text color */
     transition: color 0.5s ease-in-out;
 }
 
 .navbar-toggler-icon {
-    background-color: #FFF; /* White color for the hamburger icon */
+    background-color: #333; /* Text color */
 }
 
 .navbar-toggler {
     border: none;
-    color: #FFF; /* White color for the hamburger icon */
+    color: #333; /* Text color */
     transition: color 0.5s ease-in-out;
 }
 
 /* Hero section styles */
 #premium {
     height: 90px;
-    background: #333; /* Dark background for the hero section */
+    background: #FFD700; /* Dark Yellow background */
 }
 
 /* Main content styles */
 .features-boxed {
-    background: #333; /* Dark background for the main content */
+    background: #FFD700; /* Dark Yellow background for the main content */
     padding: 50px 0;
 }
 
 .intro h2 {
-    color: #FFD700; /* Yellow text color for headings */
+    color: #333; /* Text color for headings */
     font-size: 2rem;
     margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out; /* Add fade-in animation */
 }
 
 .features-boxed p {
-    color: #FFF; /* White text color for paragraphs */
+    color: #333; /* Text color for paragraphs */
     margin-bottom: 20px;
 }
 
@@ -75,24 +76,19 @@ body {
 
 /* Footer styles */
 .footer-dark {
-    background: #222; /* Dark background for the footer */
+    background: #FFD700; /* Dark Yellow background for the footer */
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .footer-dark p {
-    color: #FFF; /* White text color for footer text */
+    color: #333; /* Text color for footer text */
 }
 
 /* Hover effects */
-.navbar:hover,
 .navbar-toggler:hover,
 .navbar-brand:hover {
     color: #FFD700; /* Yellow color on hover */
-}
-
-.navbar:hover {
-    background-color: #222; /* Dark background on hover */
 }
 
 /* Apply transitions */
@@ -104,4 +100,16 @@ body,
 .features-boxed p,
 .footer-dark {
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
