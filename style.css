@@ -36,11 +36,24 @@ body {
 .features-boxed {
     background-color: #FFD700; /* Dark Yellow background for features-boxed */
     color: #fff; /* White color for text in features-boxed */
-    animation: fadeInUp 1s ease; /* Example animation: fade in from bottom */
+    animation: fadeInUp 1s ease, scaleIn 1s ease; /* Example animations: fade in from bottom and scale in */
 }
 
 .features-boxed h2 {
     color: #33f6ec; /* Aqua color for h2 headings */
+    animation: fadeInLeft 1s ease; /* Example animation: fade in from left */
+}
+
+.features-boxed ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    animation: fadeInRight 1s ease; /* Example animation: fade in from right */
+}
+
+.features-boxed li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .footer-dark {
@@ -110,6 +123,7 @@ body {
         display: block;
         margin-bottom: 10px;
         transition: color 0.5s ease; /* Smooth transition for text color */
+        animation: fadeInUp 1s ease; /* Example animation: fade in from bottom */
     }
 
     .mobile-menu a:hover {
@@ -139,5 +153,36 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
     }
 }
