@@ -1,151 +1,142 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 16px;
     line-height: 1.6;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark text color */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Flash animation on initial load */
-body:before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #FFD600, #FF5252); /* Initial flash gradient */
-    animation: flash 1s forwards;
-}
-
-@keyframes flash {
-    to {
-        opacity: 0;
-        pointer-events: none; /* Disable pointer events after the flash */
-    }
-}
-
-/* Navbar styling with surprise gradient and animation */
+/* Header styles */
 .navbar {
-    background: linear-gradient(to right, #FF5252, #FFD600); /* Gradient from Red to Yellow */
-    color: #fff; /* White text */
-    padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background 0.5s ease; /* Smooth color transition */
-}
-
-.navbar:hover {
-    background: linear-gradient(to right, #FFD600, #FF5252); /* Reverse gradient on hover */
+    transition: background-color 0.5s ease-in-out;
 }
 
 .navbar-brand {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 36px;
-    transition: color 0.5s ease; /* Smooth color transition */
-}
-
-.navbar:hover .navbar-brand {
-    color: #FF5252; /* Red color on hover */
+    font-size: 2rem;
+    transition: color 0.5s ease-in-out;
 }
 
 .navbar-toggler-icon {
-    background-color: #fff; /* White color for the toggler icon */
+    background-color: var(--main-color);
 }
 
-.nav-link {
-    color: #fff !important; /* White text for navigation links */
+.navbar-toggler {
+    border: none;
+    transition: color 0.5s ease-in-out;
 }
 
-/* Section styling with surprise background and animation */
+/* Hero section styles */
 #premium {
+    height: 90px;
+    background: var(--background);
+}
+
+/* Main content styles */
+.features-boxed {
+    background: var(--background);
     padding: 50px 0;
-    background: linear-gradient(to right, #64B5F6, #81C784); /* Gradient from Blue to Green */
-    transition: background 0.5s ease; /* Smooth color transition */
+    transition: background-color 0.5s ease-in-out;
 }
 
-#premium:hover {
-    background: linear-gradient(to right, #81C784, #64B5F6); /* Reverse gradient on hover */
-}
-
-/* Intro styling */
-.intro {
+.intro h2 {
+    color: var(--text-color);
+    font-size: 2rem;
     margin-bottom: 30px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
+    transition: color 0.5s ease-in-out;
 }
 
-@keyframes fadeInUp {
+.features-boxed p {
+    color: var(--main-color);
+    margin-bottom: 20px;
+    transition: color 0.5s ease-in-out;
+}
+
+.features-boxed ul {
+    list-style-type: none;
+}
+
+.features-boxed ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer-dark {
+    background: var(--secondary);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Scroll-to-top button styles */
+.social a {
+    background-color: var(--main-color);
+    color: var(--background);
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
-/* Terms of Service styling with surprise animation */
-h2 {
-    color: #FFC107; /* Amber color for section titles */
-    margin-top: 20px;
-    font-size: 2.5em;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-}
-
-/* Footer styling with surprise background and animation */
-.footer-dark {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: linear-gradient(to right, #FF7043, #FFD54F); /* Gradient from Deep Orange to Yellow */
-    color: #fafafa; /* Light text */
-    transition: background 0.5s ease; /* Smooth color transition */
-}
-
-.footer-dark:hover {
-    background: linear-gradient(to right, #FFD54F, #FF7043); /* Reverse gradient on hover */
-}
-
+/* Apply animations */
+.intro,
+.features-boxed p,
+.features-boxed ul li,
 .footer-dark p {
-    color: #fff; /* White text */
-    font-size: 16px;
-    opacity: 0.8;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.footer-dark a {
-    color: #03A9F4; /* Light Blue color for links */
-    text-decoration: none;
+/* Hover effects */
+.navbar:hover,
+.navbar-toggler:hover,
+.navbar-brand:hover {
+    color: var(--secondary);
 }
 
-.footer-dark a:hover {
-    text-decoration: underline; /* Underline links on hover */
+.navbar:hover {
+    background-color: var(--main-color);
 }
 
-/* Scroll-to-top button styling with surprise animation */
+/* Smooth scroll */
 .smoothScroll {
-    color: #FF5722; /* Deep Orange color for the arrow-up icon */
-    font-size: 24px;
-    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .smoothScroll:hover {
-    transform: scale(1.2) rotate(360deg); /* Surprise rotation on hover */
+    background-color: var(--main-color);
+    color: var(--background);
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-    .navbar-toggler {
-        background-color: #fff; /* White color for the toggler button */
-    }
-    }
+/* Apply transitions */
+body,
+.navbar,
+.navbar-toggler,
+.navbar-brand,
+.intro h2,
+.features-boxed p,
+.footer-dark,
+.social a,
+.smoothScroll {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
