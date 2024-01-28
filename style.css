@@ -12,97 +12,125 @@ li {
 }
 
 body {
-    font-family: 'Alfa Slab One', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
     background-color: #FFD700; /* Dark Yellow background */
-    color: #333; /* Text color */
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
 }
 
-/* Header styles */
 .navbar {
-    background-color: transparent; /* Make navbar background transparent */
-    padding: 15px 0;
-    transition: background-color 0.5s ease-in-out;
+    background-color: transparent !important; /* Make the navbar transparent */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
 }
 
-.navbar-brand {
-    font-size: 2rem;
-    color: #333; /* Text color */
-    transition: color 0.5s ease-in-out;
+.navbar a {
+    color: #fff; /* White color for navbar links */
+    transition: color 0.5s ease; /* Smooth transition for text color */
 }
 
-.navbar-toggler-icon {
-    background-color: #333; /* Text color */
+.navbar a:hover {
+    color: #FFD700; /* Dark Yellow color on hover */
 }
 
-.navbar-toggler {
-    border: none;
-    color: #333; /* Text color */
-    transition: color 0.5s ease-in-out;
-}
-
-/* Hero section styles */
-#premium {
-    height: 90px;
-    background: #FFD700; /* Dark Yellow background */
-}
-
-/* Main content styles */
 .features-boxed {
-    background: #FFD700; /* Dark Yellow background for the main content */
-    padding: 50px 0;
+    background-color: #FFD700; /* Dark Yellow background for features-boxed */
+    color: #fff; /* White color for text in features-boxed */
+    animation: fadeInUp 1s ease; /* Example animation: fade in from bottom */
 }
 
-.intro h2 {
-    color: #333; /* Text color for headings */
-    font-size: 2rem;
-    margin-bottom: 30px;
-    animation: fadeInUp 1s ease-out; /* Add fade-in animation */
+.features-boxed h2 {
+    color: #33f6ec; /* Aqua color for h2 headings */
 }
 
-.features-boxed p {
-    color: #333; /* Text color for paragraphs */
-    margin-bottom: 20px;
-}
-
-.features-boxed ul {
-    list-style-type: none;
-}
-
-.features-boxed ul li {
-    margin-bottom: 10px;
-}
-
-/* Footer styles */
 .footer-dark {
-    background: #FFD700; /* Dark Yellow background for the footer */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: #33f6ec; /* Aqua background for footer-dark */
+    color: #fff; /* White color for text in footer-dark */
+    animation: fadeInUp 1s ease; /* Example animation: fade in from bottom */
 }
 
-.footer-dark p {
-    color: #333; /* Text color for footer text */
+.footer-dark a {
+    color: #FFD700; /* Dark Yellow color for footer links */
+    transition: color 0.5s ease; /* Smooth transition for text color */
 }
 
-/* Hover effects */
-.navbar-toggler:hover,
-.navbar-brand:hover {
-    color: #FFD700; /* Yellow color on hover */
+.footer-dark a:hover {
+    color: #fff; /* White color on hover */
 }
 
-/* Apply transitions */
-body,
-.navbar,
-.navbar-toggler,
-.navbar-brand,
-.intro h2,
-.features-boxed p,
-.footer-dark {
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+.menu-toggle {
+    display: none;
 }
 
-/* Animation Keyframes */
+@media (max-width: 767px) {
+    .navbar {
+        background-color: #FFD700 !important; /* Dark Yellow background for navbar */
+    }
+
+    .navbar a {
+        color: #fff; /* White color for navbar links */
+    }
+
+    .navbar a:hover {
+        color: #FFD700; /* Dark Yellow color on hover */
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1100;
+        cursor: pointer;
+        animation: fadeIn 1s ease; /* Example animation: fade in */
+    }
+
+    .bar {
+        background-color: #fff;
+        height: 5px;
+        width: 35px;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .menu-toggle:hover .bar {
+        background-color: #33f6ec; /* Aqua color on hover */
+    }
+
+    .mobile-menu {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .mobile-menu a {
+        color: #FFD700; /* Dark Yellow color for mobile menu links */
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 10px;
+        transition: color 0.5s ease; /* Smooth transition for text color */
+    }
+
+    .mobile-menu a:hover {
+        color: #fff; /* White color on hover */
+    }
+
+    body {
+        overflow-x: hidden; /* Hide horizontal scrollbar on small screens */
+    }
+}
+
+/* Custom animations (you can add more as needed) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
