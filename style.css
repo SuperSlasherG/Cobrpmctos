@@ -12,7 +12,7 @@ li {
 }
 
 body {
-    background-color:  #ffe08a; /* Dark Yellow background */
+    background-color: #ffe08a; /* Dark Yellow background */
     margin: 0;
     padding: 0;
     font-family: 'League Spartan', sans-serif;
@@ -34,7 +34,7 @@ body {
 }
 
 .features-boxed {
-    background-color: #FFD700; /* Dark Yellow background for features-boxed */
+    background-color: #ffe08a; /* Dark Yellow background for features-boxed */
     color: #001f3f; /* Dark Blue color for text in features-boxed */
     animation: fadeInUp 1s ease, scaleIn 1s ease; /* Example animations: fade in from bottom and scale in */
 }
@@ -58,12 +58,12 @@ body {
 
 .footer-dark {
     background-color: #001f3f; /* Dark Blue background for footer-dark */
-    color: #FFD700; /* Dark Yellow color for text in footer-dark */
+    color: #ffe08a; /* Dark Yellow color for text in footer-dark */
     animation: fadeInUp 1s ease; /* Example animation: fade in from bottom */
 }
 
 .footer-dark a {
-    color: #FFD700; /* Dark Yellow color for footer links */
+    color: #ffe08a; /* Dark Yellow color for footer links */
     transition: color 0.5s ease; /* Smooth transition for text color */
 }
 
@@ -77,7 +77,7 @@ body {
 
 @media (max-width: 767px) {
     .navbar {
-        background-color: #FFD700 !important; /* Dark Yellow background for navbar */
+        background-color: #ffe08a !important; /* Dark Yellow background for navbar */
     }
 
     .navbar a {
@@ -85,7 +85,7 @@ body {
     }
 
     .navbar a:hover {
-        color: #FFD700; /* Dark Yellow color on hover */
+        color: #ffe08a; /* Dark Yellow color on hover */
     }
 
     .menu-toggle {
@@ -107,7 +107,7 @@ body {
     }
 
     .menu-toggle:hover .bar {
-        background-color: #FFD700; /* Dark Yellow color on hover */
+        background-color: #ffe08a; /* Dark Yellow color on hover */
     }
 
     .mobile-menu {
@@ -117,7 +117,7 @@ body {
     }
 
     .mobile-menu a {
-        color: #FFD700; /* Dark Yellow color for mobile menu links */
+        color: #ffe08a; /* Dark Yellow color for mobile menu links */
         text-decoration: none;
         font-size: 1.5rem;
         display: block;
