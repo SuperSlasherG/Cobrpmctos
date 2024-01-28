@@ -98,7 +98,7 @@ body {
     }
 
     .mobile-menu {
-        display: block;
+        display: none;
         text-align: center;
         padding: 15px;
     }
