@@ -12,7 +12,7 @@ li {
 }
 
 body {
-    background-color: #001f3f; /* Dark Blue background */
+    background-color: #FFD700; /* Dark Yellow background */
     margin: 0;
     padding: 0;
     font-family: 'League Spartan', sans-serif;
@@ -30,17 +30,17 @@ body {
 }
 
 .navbar a:hover {
-    color: #FFD700; /* Dark Yellow color on hover */
+    color: #001f3f; /* Dark Blue color on hover */
 }
 
 .features-boxed {
     background-color: #FFD700; /* Dark Yellow background for features-boxed */
-    color: #fff; /* White color for text in features-boxed */
+    color: #001f3f; /* Dark Blue color for text in features-boxed */
     animation: fadeInUp 1s ease, scaleIn 1s ease; /* Example animations: fade in from bottom and scale in */
 }
 
 .features-boxed h2 {
-    color: #33f6ec; /* Aqua color for h2 headings */
+    color: #001f3f; /* Dark Blue color for h2 headings */
     animation: fadeInLeft 1s ease; /* Example animation: fade in from left */
 }
 
@@ -57,8 +57,8 @@ body {
 }
 
 .footer-dark {
-    background-color: #33f6ec; /* Aqua background for footer-dark */
-    color: #fff; /* White color for text in footer-dark */
+    background-color: #001f3f; /* Dark Blue background for footer-dark */
+    color: #FFD700; /* Dark Yellow color for text in footer-dark */
     animation: fadeInUp 1s ease; /* Example animation: fade in from bottom */
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .footer-dark a:hover {
-    color: #fff; /* White color on hover */
+    color: #001f3f; /* Dark Blue color on hover */
 }
 
 .menu-toggle {
@@ -81,7 +81,7 @@ body {
     }
 
     .navbar a {
-        color: #fff; /* White color for navbar links */
+        color: #001f3f; /* Dark Blue color for navbar links */
     }
 
     .navbar a:hover {
@@ -99,7 +99,7 @@ body {
     }
 
     .bar {
-        background-color: #fff;
+        background-color: #001f3f;
         height: 5px;
         width: 35px;
         margin: 6px 0;
@@ -107,7 +107,7 @@ body {
     }
 
     .menu-toggle:hover .bar {
-        background-color: #33f6ec; /* Aqua color on hover */
+        background-color: #FFD700; /* Dark Yellow color on hover */
     }
 
     .mobile-menu {
@@ -127,7 +127,7 @@ body {
     }
 
     .mobile-menu a:hover {
-        color: #fff; /* White color on hover */
+        color: #001f3f; /* Dark Blue color on hover */
     }
 
     body {
