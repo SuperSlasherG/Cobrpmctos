@@ -14,6 +14,7 @@ body {
     font-family: 'Alfa Slab One', sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    background-color: #FFD700; /* Dark Yellow background */
 }
 
 /* Header styles */
@@ -53,12 +54,14 @@ body {
     font-size: 2rem;
     margin-bottom: 30px;
     transition: color 0.5s ease-in-out;
+    opacity: 0; /* Initially hidden */
 }
 
 .features-boxed p {
     color: var(--main-color);
     margin-bottom: 20px;
     transition: color 0.5s ease-in-out;
+    opacity: 0; /* Initially hidden */
 }
 
 .features-boxed ul {
@@ -139,4 +142,22 @@ body,
 .social a,
 .smoothScroll {
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Scroll animation */
+@keyframes fadeInOnScroll {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply scroll animation */
+.intro.show,
+.features-boxed p.show {
+    animation: fadeInOnScroll 1s ease-in-out forwards;
 }
