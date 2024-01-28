@@ -12,177 +12,47 @@ li {
 }
 
 body {
-    background-color: #ffe08a; /* Dark Yellow background */
-    margin: 0;
-    padding: 0;
-    font-family: 'League Spartan', sans-serif;
-    transition: background-color 0.5s ease; /* Smooth transition for background color */
+    background-color: #ffe08a;
+    color: #fff;
 }
 
 .navbar {
-    background-color: transparent !important; /* Make the navbar transparent */
-    transition: background-color 0.5s ease; /* Smooth transition for background color */
+    background-color: transparent !important; /* Set navbar background to transparent */
+    transition: background-color 0.5s ease; /* Add transition effect for smooth color change */
 }
 
 .navbar a {
-    color: #fff; /* White color for navbar links */
-    transition: color 0.5s ease; /* Smooth transition for text color */
+    color: #fff !important; /* Set navbar links color to white */
 }
 
-.navbar a:hover {
-    color: #001f3f; /* Dark Blue color on hover */
+.navbar-toggler-icon {
+    background-color: #fff; /* Set hamburger icon color to white */
+}
+
+.navbar-dark .navbar-toggler:hover {
+    background-color: #f0ad4e !important; /* Change background color on hover */
 }
 
 .features-boxed {
-    background-color: #ffe08a; /* Dark Yellow background for features-boxed */
-    color: #001f3f; /* Dark Blue color for text in features-boxed */
-    animation: fadeInUp 1s ease, scaleIn 1s ease; /* Example animations: fade in from bottom and scale in */
-}
-
-.features-boxed h2 {
-    color: #001f3f; /* Dark Blue color for h2 headings */
-    animation: fadeInLeft 1s ease; /* Example animation: fade in from left */
-}
-
-.features-boxed ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    animation: fadeInRight 1s ease; /* Example animation: fade in from right */
-}
-
-.features-boxed li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    background: #ffe08a;
+    color: #fff;
 }
 
 .footer-dark {
-    background-color: #001f3f; /* Dark Blue background for footer-dark */
-    color: #ffe08a; /* Dark Yellow color for text in footer-dark */
-    animation: fadeInUp 1s ease; /* Example animation: fade in from bottom */
+    background: #ffe08a;
+    color: #fff;
 }
 
 .footer-dark a {
-    color: #ffe08a; /* Dark Yellow color for footer links */
-    transition: color 0.5s ease; /* Smooth transition for text color */
+    color: #fff !important;
 }
 
-.footer-dark a:hover {
-    color: #001f3f; /* Dark Blue color on hover */
+.footer-dark p {
+    color: #fff;
 }
 
-.menu-toggle {
-    display: none;
+.footer-dark i {
+    color: #fff;
 }
 
-@media (max-width: 767px) {
-    .navbar {
-        background-color: #ffe08a !important; /* Dark Yellow background for navbar */
-    }
-
-    .navbar a {
-        color: #001f3f; /* Dark Blue color for navbar links */
-    }
-
-    .navbar a:hover {
-        color: #ffe08a; /* Dark Yellow color on hover */
-    }
-
-    .menu-toggle {
-        display: block;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 1100;
-        cursor: pointer;
-        animation: fadeIn 1s ease; /* Example animation: fade in */
-    }
-
-    .bar {
-        background-color: #001f3f;
-        height: 5px;
-        width: 35px;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-
-    .menu-toggle:hover .bar {
-        background-color: #ffe08a; /* Dark Yellow color on hover */
-    }
-
-    .mobile-menu {
-        display: none;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .mobile-menu a {
-        color: #ffe08a; /* Dark Yellow color for mobile menu links */
-        text-decoration: none;
-        font-size: 1.5rem;
-        display: block;
-        margin-bottom: 10px;
-        transition: color 0.5s ease; /* Smooth transition for text color */
-        animation: fadeInUp 1s ease; /* Example animation: fade in from bottom */
-    }
-
-    .mobile-menu a:hover {
-        color: #001f3f; /* Dark Blue color on hover */
-    }
-
-    body {
-        overflow-x: hidden; /* Hide horizontal scrollbar on small screens */
-    }
-}
-
-/* Custom animations (you can add more as needed) */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes scaleIn {
-    from {
-        transform: scale(0.8);
-    }
-    to {
-        transform: scale(1);
-    }
-}
+/* Add more styles or override existing ones as needed */
